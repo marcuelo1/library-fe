@@ -1,0 +1,45 @@
+.bt-rjs-modal {
+  .bt-rjs-modal-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .bt-rjs-modal-container {
+    width: fit-content;
+    min-width: 500px;
+    height: fit-content;
+    min-height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+
+    .bt-rjs-modal-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.125);
+
+      .bt-rjs-modal-header-title {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .bt-rjs-modal-header-close-btn {
+        cursor: pointer;
+      }
+    }
+
+    .bt-rjs-modal-content {
+      max-height: 510px;
+      overflow-y: auto;
+    }
+  }
+}
