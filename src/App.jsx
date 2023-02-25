@@ -23,6 +23,7 @@ import SignUpView from './app/features/portal/views/signUpView';
 import Layout3 from './app/core/components/layouts/layout3';
 import HomeIndexView from './app/features/public/home/views/homeIndexView';
 import BooksIndexView from './app/features/public/books/views/booksIndexView';
+import MagazinesIndexView from './app/features/public/magazines/views/magazinesIndexView';
 
 const tabs = [
   {
@@ -74,6 +75,7 @@ function App() {
           <Route path="/" element={<Layout3 tabs={tabs} logo={Logo} name="Library System" />} >
             <Route path="" element={<HomeIndexView />} />
             <Route path="books" element={<BooksIndexView />} />
+            <Route path="magazines" element={<MagazinesIndexView />} />
           </Route>
         </Routes>
       </div>
