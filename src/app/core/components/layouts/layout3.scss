@@ -1,0 +1,107 @@
+.bt-rjs-layout3 {
+  nav.bt-rjs-navbar {
+    height: 40px;
+    padding: 8px;
+    background-color: #4aaa51;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.7);
+    display: flex;
+
+    .bt-rjs-navbar-brand {
+      flex: 0 1 auto;
+      text-align: left;
+      display: flex;
+      align-items: center;
+
+      img.bt-rjs-navbar-brand-logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin-right: 10px;
+      }
+
+      .bt-rjs-navbar-brand-name {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+
+    .bt-rjs-navbar-menus {
+      flex: 1 1 auto;
+      margin: 0 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .search-bar {
+        position: relative;
+        
+        input {
+          width: 400px;
+          height: 30px;
+          border-radius: 100px;
+          border: 1px solid rgba(0,0,0,0.25);
+          padding: 0 35px 0 10px;
+    
+          &:focus-visible {
+            border: 1px solid rgba(0,0,0,0.8);
+            outline: none;
+          }
+        }
+  
+        img {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .bt-rjs-navbar-actions {
+      flex: 0 1 10%;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: end;
+
+      .bt-rjs-navbar-dropdown {
+        margin: 3px 10px;
+        position: relative;
+        cursor: pointer;
+
+        img {
+          height: 33px;
+          background-color: white;
+          border-radius: 50%;
+          border: 2px solid rgba(0,0,0,0.25);
+        }
+
+        .bt-rjs-navbar-dropdown-menu {
+          position: absolute;
+          right: 0;
+          top: 100%;
+          width: fit-content;
+          height: fit-content;
+          background-color: white;
+          border: 1px solid rgba(0,0,0,0.25);
+          border-radius: 5px;
+
+          .bt-rjs-navbar-dropdown-menu-item {
+            border-bottom: 1px solid rgba(0,0,0,0.25);
+            padding: 8px 18px;
+
+            text-align: left;
+            font-size: 0.9rem;
+            white-space: nowrap;
+
+            &:hover {
+              background-color: #eaeaea;
+            }
+          }
+        }
+      }
+    }
+  }
+}
