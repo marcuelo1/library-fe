@@ -69,7 +69,7 @@ const Layout3 = (props) => {
         <div className="bt-rjs-navbar-actions">
           <div className="bt-rjs-navbar-dropdown" onMouseEnter={onHoverDropdown} onMouseLeave={outHoverDropdown}>
             <img src={require("../../assets/icons/unknown-user.png")} alt="" />
-            <div className='bt-rjs-navbar-dropdown-menu'>
+            <div className='bt-rjs-navbar-dropdown-menu hide'>
               <div className='bt-rjs-navbar-dropdown-menu-item'>
                 Profile
               </div>
@@ -80,15 +80,8 @@ const Layout3 = (props) => {
           </div>
         </div>
       </nav>
-      {/* <div className='bt-rjs-sidebar'>
+      <div className='bt-rjs-sidebar'>
         <div className='bt-rjs-sidebar-bg' onClick={closeMenu} ></div>
-        <div className='header'>
-          <img className='bt-rjs-sidebar-logo' src={logo} />
-          <div className='title'>{name}</div>
-          <div className='bt-rjs-sidebar-header-collapse'>
-            <img className='menu-icon' src={require("../../assets/icons/circled-menu-white.png")} onClick={openMenu} />
-          </div>
-        </div>
         <div className='content'>
           <div className='section'>
             <div className='category-name'>Menu</div>
@@ -107,7 +100,7 @@ const Layout3 = (props) => {
         </div>
         <div className='footer'></div>
       </div>
-      <div className='bt-rjs-body'>
+      {/* <div className='bt-rjs-body'>
         <div className='bt-rjs-body-container'>
           <div className='bt-rjs-body-header'>
             <div className='bt-rjs-body-header-title'>{pageName}</div>

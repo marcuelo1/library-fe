@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Loading from './app/core/utils/loading';
 
-import Layout2 from './/app/core/components/layouts/layout2';
+// import Layout2 from './/app/core/components/layouts/layout2';
 
 import DashboardIcon from "./app/core/assets/icons/dashboard.png";
 import DashboardIconWhite from "./app/core/assets/icons/dashboard-white.png";
@@ -23,31 +23,37 @@ import Layout3 from './app/core/components/layouts/layout3';
 const tabs = [
   {
     urlName: "",
-    tabName: "Dashboard",
+    tabName: "Home",
     activeTabIcon: DashboardIcon,
     inactiveTabIcon: DashboardIconWhite
   },
   {
-    urlName: "inventory",
-    tabName: "Inventory",
+    urlName: "books",
+    tabName: "Books",
     activeTabIcon: DeliveryIcon,
     inactiveTabIcon: DeliveryIconWhite
   },
   {
-    urlName: "sales",
-    tabName: "Sales",
+    urlName: "magazines",
+    tabName: "Magazines",
     activeTabIcon: StationReportsIcon,
     inactiveTabIcon: StationReportsIconWhite
   },
   {
-    urlName: "customers",
-    tabName: "Customers",
+    urlName: "ebooks",
+    tabName: "E-Books",
     activeTabIcon: SuppliersIcon,
     inactiveTabIcon: SuppliersIconWhite
   },
   {
-    urlName: "logs",
-    tabName: "Logs",
+    urlName: "thesis",
+    tabName: "Thesis",
+    activeTabIcon: BranchesIcon,
+    inactiveTabIcon: BranchesIconWhite
+  },
+  {
+    urlName: "newspaper",
+    tabName: "Newspaper",
     activeTabIcon: BranchesIcon,
     inactiveTabIcon: BranchesIconWhite
   }
