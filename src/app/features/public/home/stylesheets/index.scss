@@ -1,0 +1,22 @@
+#home-index-view {
+  .section {
+    &:first-child {
+      margin-bottom: 40px;
+    }
+
+    .title {
+      margin-bottom: 15px;
+
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .reading-materials {
+      display: flex;
+      gap: 20px;
+      overflow-x: scroll;
+      padding-bottom: 15px;
+    }
+  }
+}
