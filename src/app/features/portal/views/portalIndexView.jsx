@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ActionButton2 from '../../../core/components/buttons/actionButton2';
 import "../stylesheets/index.scss";
 
@@ -28,7 +29,7 @@ class PortalIndexView extends Component {
             <ActionButton2 config={signInBtnConfig} />
             <div className="signup-btn-content">
               Don't have an account yet?
-              <span> Sign Up </span>
+              <Link to="/sign_up"> Sign Up </Link>
               now!
             </div>
           </div>

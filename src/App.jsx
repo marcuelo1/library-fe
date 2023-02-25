@@ -17,6 +17,7 @@ import BranchesIcon from "./app/core/assets/icons/branches.png";
 import BranchesIconWhite from "./app/core/assets/icons/branches-white.png";
 import Logo from "./app/core/assets/doubledragon.jpg";
 import PortalIndexView from './app/features/portal/views/portalIndexView';
+import SignUpView from './app/features/portal/views/signUpView';
 
 const tabs = [
   {
@@ -58,6 +59,7 @@ function App() {
         <Loading />
         <Routes>
           <Route path="sign_in" element={<PortalIndexView />} />
+          <Route path="sign_up" element={<SignUpView />} />
           <Route path="/" element={<Layout2 tabs={tabs} logo={Logo} name="Library System" />} >
           </Route>
         </Routes>

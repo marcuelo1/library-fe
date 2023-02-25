@@ -1,0 +1,77 @@
+#sign-up-view {
+  width: 100vw;
+  height: 100vh;
+  // background-color: #4aaa51;
+  background-color: #4aaa51;
+
+  .content-card {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.7);
+    padding: calc(50% * 0.03);
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .title {
+      text-align: left;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .group {
+      width: 90%;
+      margin-bottom: 25px;
+      text-align: left;
+  
+      .label {
+        font-size: 13px;
+        font-weight: 500;
+      }
+  
+      input {
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+        outline: none;
+        background-color: transparent;
+        padding: 8px 6px 3px 6px;
+        width: 80%;
+        font-size: 1rem;
+
+        &[name="school_id"] {
+          width: 100%;
+        }
+
+        &[type="file"] {
+          border-bottom: none;
+          font-size: 0.9rem;
+          padding: 0;
+          padding-top: 10px;
+        }
+      }
+  
+      input:focus-visible {
+        border-bottom: 1px solid rgba(0,0,0,0.8);
+      }
+    }
+
+    .signin-btn-content {
+      margin-top: 30px;
+      font-size: 0.8rem;
+
+      a {
+        color: #008cad;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
