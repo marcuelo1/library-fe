@@ -1,0 +1,94 @@
+#portal-index-view {
+  width: 100vw;
+  height: 100vh;
+  // background-color: #4aaa51;
+  background-color: #4aaa51;
+
+  .content-card {
+    width: 65%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .section {
+      width: 47%;
+      height: 85%;
+      
+      &:first-child {
+        border-right: 1px solid rgba(0,0,0,0.25);
+      }
+      
+      &:nth-child(2) {
+        padding-left: 20px;
+        width: calc(47% - 20px);
+      }
+
+      .title {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 70px;
+      }
+
+      .group {
+        width: 90%;
+        margin-bottom: 25px;
+        text-align: left;
+    
+        .label {
+          font-size: 13px;
+          font-weight: 500;
+        }
+    
+        input {
+          border: none;
+          border-bottom: 1px solid rgba(0,0,0,0.2);
+          outline: none;
+          background-color: transparent;
+          padding: 8px 6px 3px 6px;
+          width: 97%;
+          font-size: 1rem;
+        }
+    
+        input:focus-visible {
+          border-bottom: 1px solid rgba(0,0,0,0.8);
+        }
+      }
+
+      .signup-btn-content {
+        margin-top: 50px;
+        font-size: 0.8rem;
+
+        span {
+          color: #008cad;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 95%;
+        height: 70%;
+        object-fit: contain;
+      }
+
+      .subtitle {
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 0.8rem;
+        text-align: left;
+      }
+    }
+  }
+}
