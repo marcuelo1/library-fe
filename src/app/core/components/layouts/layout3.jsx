@@ -100,16 +100,17 @@ const Layout3 = (props) => {
         </div>
         <div className='footer'></div>
       </div>
-      {/* <div className='bt-rjs-body'>
-        <div className='bt-rjs-body-container'>
+      <div className='bt-rjs-body'>
+        {pageName !== "Home" ? 
           <div className='bt-rjs-body-header'>
             <div className='bt-rjs-body-header-title'>{pageName}</div>
           </div>
-          <div className='bt-rjs-body-content'>
-            <Outlet/>
-          </div>
+          : ""
+        }
+        <div className='bt-rjs-body-content'>
+          <Outlet/>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
