@@ -32,7 +32,7 @@ const ReadingMaterialCard = (props) => {
       <div className="icon">
         <img src={img} alt="" />
       </div>
-      <div className="reading-material-title">{type}</div>
+      <div className="reading-material-title">{type} Name</div>
     </div>
   )
 }
