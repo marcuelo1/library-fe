@@ -1,0 +1,14 @@
+#theses-index-view {
+  .reading-materials {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    li {
+      float: left;
+      margin-right: 45px;
+      margin-bottom: 45px;
+    }
+  }
+}

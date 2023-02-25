@@ -24,6 +24,9 @@ import Layout3 from './app/core/components/layouts/layout3';
 import HomeIndexView from './app/features/public/home/views/homeIndexView';
 import BooksIndexView from './app/features/public/books/views/booksIndexView';
 import MagazinesIndexView from './app/features/public/magazines/views/magazinesIndexView';
+import EbooksIndexView from './app/features/public/ebooks/views/ebooksIndexView';
+import ThesesIndexView from './app/features/public/theses/views/thesesIndexView';
+import NewspapersIndexView from './app/features/public/newspapers/views/newspapersIndexView';
 
 const tabs = [
   {
@@ -51,14 +54,14 @@ const tabs = [
     inactiveTabIcon: EbookIconWhite
   },
   {
-    urlName: "thesis",
-    tabName: "Thesis",
+    urlName: "theses",
+    tabName: "Theses",
     activeTabIcon: ThesisIcon,
     inactiveTabIcon: ThesisIconWhite
   },
   {
-    urlName: "newspaper",
-    tabName: "Newspaper",
+    urlName: "newspapers",
+    tabName: "Newspapers",
     activeTabIcon: NewspaperIcon,
     inactiveTabIcon: NewspaperIconWhite
   }
@@ -76,6 +79,9 @@ function App() {
             <Route path="" element={<HomeIndexView />} />
             <Route path="books" element={<BooksIndexView />} />
             <Route path="magazines" element={<MagazinesIndexView />} />
+            <Route path="ebooks" element={<EbooksIndexView />} />
+            <Route path="theses" element={<ThesesIndexView />} />
+            <Route path="newspapers" element={<NewspapersIndexView />} />
           </Route>
         </Routes>
       </div>
